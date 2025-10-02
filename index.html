@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Notes App — Submission</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="appbar" style="margin-left: 1.5rem; margin-right: 2rem">
+        <h1>🗒️ Notes App<span class="meta">ASAH 2025</span></h1>
+        <div class="meta">Naufal Putra Maulana Malik [F518D5Y1473] - FEBE AI</div>
+    </header>
+
+    <main class="container">
+        <section class="layout">
+            <aside>
+                <div class="panel">
+                    <h2>Tambah Catatan</h2>
+                    <note-form></note-form>
+                </div>
+
+                <div style="height:16px"></div>
+
+                <div class="panel">
+                    <h2>Statistik</h2>
+                    <div style="margin-top:10px">
+                        <div class="small">Total catatan: <span id="totalNotes">0</span></div>
+                        <div class="small">Catatan pinned: <span id="pinnedCount">0</span></div>
+                    </div>
+                </div>
+            </aside>
+
+            <section>
+                <div class="panel">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+                        <h2 style="margin:0">Daftar Catatan</h2>
+                        <div class="flex"><span class="pill">Ayo Produktif !</span></div>
+                    </div>
+
+                    <note-list></note-list>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
